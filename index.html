@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js">
+
+	</script>
+</head>
+
+<body>
+	<a-scene>
+		<a-assets>
+			<img id="plant" src="assets/plant.png">
+      <img id="skybox" src="assets/outside.jpg">
+      <img id="window" src="assets/window.png">
+      <img id="background" src="assets/test.jpeg">
+      <a-asset-item id="model" src="assets/plantmodel.glb"></a-asset-item>
+		</a-assets>
+
+    <a-gltf-model src="#model" position= "0.1 1.4 -4" rotation="0 45 0" raidus= "0.5" scale="0.02 0.02 0.02" ></a-gltf-model>
+    
+    <a-image position="0 2 -4" roation="0 0 0" height="3.7" width="1.7" material= "src:#window"></a-image>
+
+		<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#5D67B0"></a-plane>
+
+    <a-sky src="#background"></a-sky>
+
+	
+<!--
+
+  	<a-sky src="#skybox"></a-sky>
+
+    <a-image position="-2 2.75 -3" rotation="0 0 0" material="src:#plant"></a-image>
+
+		<a-box position="-1 0.5 -3" rotation="0 45 0" radius= "0.5" color="#4CC3D9"></a-box>
+
+  	<a-sphere position="-2 1.5 -3" radius="0.5" color="white"></a-sphere>
+
+		<a-torus position="2 1.5 -3" radius="0.5" radius-tubular="0.1" color="#9b2727"></a-torus> -->
+    
+
+	</a-scene>
+</body>
+
+</html>
